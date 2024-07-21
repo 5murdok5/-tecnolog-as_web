@@ -3,3 +3,7 @@
   width: auto;
   background-size: auto;
 }
+
+.navmenu-color{
+  background-color: transparent !important;
+}
