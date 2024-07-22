@@ -4,26 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página con Formulario de Contacto</title>
+    <title>Tecnologías Web - Contactos</title>
+    <link rel="icon" type="image/png" href="../assets/favicon.ico">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        body {
-            padding-top: 60px;
-            /* compensa la altura del navbar */
-        }
-
-        .container {
-            max-width: 800px;
-        }
-    </style>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 </head>
 
 <body>
-
+    <!-- Menu Top -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top align-items-center">
-            <div class="container">
-                <a class="navbar-brand d-flex flex-row align-items-center gap-2" href="/">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top navmenu-color navbar-normal">
+            <div class="container-fluid animate__animated animate__slideInDown mx-5 ">
+                <a class="navbar-brand d-flex flex-row align-items-center gap-2" href="#">
                     <picture>
                         <img src="../assets/favicon-32x32.png" class="img-fluid" alt="image desc" />
                     </picture>
@@ -33,49 +29,139 @@
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
+                <div class="collapse navbar-collapse animate__animated animate__fadeIn" id="navbarNav">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link" href="../index.html">Inicio</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/pages/contactanos.html">Contacto</a>
+                        <li class="nav-item ">
+                            <a class="nav-link active" href="#">Contacto</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#misdatos">Contacto</a>
+                            <a class="nav-link" href="./mis_datos.html">Mis Datos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#informacionadd">Contacto</a>
+                            <a class="nav-link" href="./add-info.html">Información Adicional</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-
-    <section class="container mt-5 mb-20">
-        <h1 class="mb-4">Formulario de Contacto</h1>
-        <form action="#" method="post">
-            <div class="mb-3">
-                <label for="nombre" class="form-label">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" class="form-control" required>
-            </div>
-            <div class="mb-3">
-                <label for="email" class="form-label">Email:</label>
-                <input type="email" id="email" name="email" class="form-control" required>
-            </div>
-            <div class="mb-3">
-                <label for="mensaje" class="form-label">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" class="form-control" rows="4" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Enviar</button>
-        </form>
-    </section>
-    <footer class="bg-dark text-white py-4 mt-5">
+    <!-- Header Component -->
+    <section id="header-subpage" class="header-subpage">
         <div class="container text-center">
-            <p>&copy; 2024 Santiago A Moreno B IDCODE</p>
+            <h3 class="header-title">CONTACTOS</h3>
+            <p class="header-description">Encuentra toda la información que necesitas para ponerte en contacto con
+                nosotros.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact-section" class="contact-section ">
+        <div class="container">
+            <div class="contact-form-wrapper">
+                <div class="row">
+                    <!-- Formulario de contacto -->
+                    <div class="col-md-6">
+                        <form class="contact-form" data-aos="fade-right">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="name" placeholder="Nombre" required>
+                                <label for="name">Nombre</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="email" placeholder="Correo Electrónico"
+                                    required>
+                                <label for="email">Correo Electrónico</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="subject" placeholder="Asunto" required>
+                                <label for="subject">Asunto</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <textarea id="message" class="form-control" placeholder="Mensaje" rows="6"
+                                    required></textarea>
+                                <label for="message">Mensaje</label>
+                            </div>
+                            <button type="submit" class="btn btn-submit">Enviar Mensaje</button>
+                        </form>
+                    </div>
+                    <!-- Información de contacto -->
+                    <div class="col-md-6 contact-info" data-aos="fade-left">
+                        <h2>Contáctanos</h2>
+                        <p class="contact-description">Estamos aquí para ayudarte. Si tienes alguna pregunta, no dudes
+                            en contactarnos.</p>
+                        <ul class="contact-details">
+                            <li><strong>Nombre de la Empresa:</strong> Tech Innovations</li>
+                            <li><strong>Teléfono:</strong> +123 456 789</li>
+                            <li><strong>Dirección:</strong> Calle Ficticia 123, Ciudad, País</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer" class="footer bg-dark text-white pt-5 pb-3">
+        <div class="container">
+            <div class="row">
+                <!-- Información de la Empresa -->
+                <div class="col-md-4 mb-4">
+                    <h4 class="footer-title">Sobre Nosotros</h4>
+                    <p class="footer-description">En Tech Innovations, nos dedicamos a traer las últimas tendencias
+                        tecnológicas y soluciones innovadoras para ayudarte a alcanzar el futuro. Estamos comprometidos
+                        con la excelencia y la satisfacción del cliente.</p>
+                </div>
+                <!-- Enlaces a Secciones -->
+                <div class="col-md-4 mb-4">
+                    <h4 class="footer-title">Navegación</h4>
+                    <ul class="footer-links list-unstyled">
+                        <li><a href="#home" class="text-white">Inicio</a></li>
+                        <li><a href="#tech-carousel" class="text-white">Tendencias</a></li>
+                        <li><a href="#impact-section" class="text-white">Impacto</a></li>
+                        <li><a href="#articles-section" class="text-white">Artículos</a></li>
+                        <li><a href="#contact-section" class="text-white">Contacto</a></li>
+                    </ul>
+                </div>
+                <!-- Información de Contacto -->
+                <div class="col-md-4 mb-4">
+                    <h4 class="footer-title">Contacto</h4>
+                    <ul class="footer-contact list-unstyled">
+                        <li><strong>Dirección:</strong> Calle Ficticia 123, Ciudad, País</li>
+                        <li><strong>Teléfono:</strong> +123 456 789</li>
+                        <li><strong>Email:</strong> <a href="mailto:contacto@techinnovations.com"
+                                class="text-white">contacto@techinnovations.com</a></li>
+                    </ul>
+                    <div class="footer-social">
+                        <a href="https://facebook.com" class="social-icon text-white me-2"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com" class="social-icon text-white me-2"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="https://linkedin.com" class="social-icon text-white me-2"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a href="https://instagram.com" class="social-icon text-white"><i
+                                class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom text-center mt-4 p-3 end-footter">
+            <p>&copy; 2024 <b class="id-code-app">{ID}-CODE</b> Santiago A. Moreno B.</p>
         </div>
     </footer>
+
+
+
+    <script src="../js/actions.js"></script>
+    <script src="../js/scrollNav.js"></script>
+    <script src="../js/animatetechbar.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            delay: 200, // Retraso global en milisegundos
+            duration: 800, // Duración de la animación en milisegundos
+        });
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
 </body>

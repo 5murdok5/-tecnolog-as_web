@@ -9,12 +9,16 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 </head>
 
 <body>
+    <!-- Menu Top -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top align-items-center navmenu-color">
-            <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top navmenu-color navbar-normal">
+            <div class="container-fluid animate__animated animate__slideInDown mx-5 ">
                 <a class="navbar-brand d-flex flex-row align-items-center gap-2" href="#">
                     <picture>
                         <img src="assets/favicon-32x32.png" class="img-fluid" alt="image desc" />
@@ -25,27 +29,26 @@
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
+                <div class="collapse navbar-collapse animate__animated animate__fadeIn" id="navbarNav">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="#inicio">Inicio</a>
+                            <a class="nav-link active" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="./pages/contactanos.html">Contacto</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/pages/contactanos.html">Contacto</a>
-                        </li>
+                            <a class="nav-link" href="./pages/mis_datos.html">Mis Datos</a>
                         <li class="nav-item">
-                            <a class="nav-link" href="#misdatos">Contacto</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#informacionadd">Contacto</a>
+                            <a class="nav-link" href="./pages/add-info.html">Información Adicional</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-    <section id="carousel" class="py-5  size-caroucel">
-        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+    <section id="carousel" class="size-caroucel">
+        <div id="carouselExampleDark" class="carousel carousel-dark carousel-fade slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
                     aria-current="true" aria-label="Slide 1"></button>
@@ -56,36 +59,34 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active" data-bs-interval="10000">
-                    <img src="https://www.beetrack.com/hubfs/tecnologia%20en%20los%20negocios-1.jpg"
-                        class="d-block w-100" alt="imagen de pc">
-                    <div class="carousel-caption d-none d-md-block bg-white text-dark px-3">
-                        <h5>Impacto de las Tecnologías Web en la Sociedad y los Negocios</h5>
-                        <p>Las tecnologías web han transformado radicalmente la forma en que interactuamos con la
-                            información, las empresas y la sociedad en general. Desde la aparición de la World Wide Web,
-                            hemos sido testigos de cambios significativos en áreas como el comercio electrónico, la
-                            comunicación, la educación y mucho más.</p>
+                    <img src="./assets/carousel/carousel-1.png" class="d-block w-100" alt="imagen de pc">
+                    <div class="carousel-caption d-none d-md-block">
+                        <div class="carousel-caption-left ">
+                            <h5 class="animate__animated animate__fadeInDown">Tecnología, Transformación y Sociedad
+                            </h5>
+                            <p class="animate__animated animate__fadeInUp">Han cambiado nuestra forma de interactuar.
+                            </p>
+                        </div>
                     </div>
                 </div>
                 <div class="carousel-item" data-bs-interval="2000">
-                    <img src="https://economipedia.com/wp-content/uploads/ventajas-y-desventajas-de-la-tecnolog%C3%ADa-1024x680.jpg"
-                        class="d-block w-100" alt="imagen de pc 2">
-                    <div class="carousel-caption d-none d-md-block bg-white text-dark px-3">
-                        <h5>Desafíos y Oportunidades</h5>
-                        <p>A medida que las tecnologías web continúan evolucionando, también surgen nuevos desafíos y
-                            oportunidades para las empresas y la sociedad en su conjunto. Es fundamental comprender cómo
-                            adaptarse a estos cambios y aprovechar al máximo las herramientas y plataformas disponibles.
-                        </p>
+                    <img src="./assets/carousel/carousel-2.png" class="d-block w-100" alt="imagen de pc 2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <div class="carousel-caption-left ">
+                            <h5 class="animate__animated animate__fadeInDown">Desafíos y Oportunidades</h5>
+                            <p class="animate__animated animate__fadeInUp">Adaptarse y aprovechar las herramientas web.
+                            </p>
+                        </div>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="https://idgrup.com/wp-content/uploads/2016/06/el-impacto-de-las-nuevas-tecnologias-en-las-empresas-noticias-infocif.jpg"
-                        class="d-block w-100" alt="tecnologias">
-                    <div class="carousel-caption d-none d-md-block bg-white text-dark px-3">
-                        <h5>Futuro de las Tecnologías Web</h5>
-                        <p>El futuro de las tecnologías web promete seguir siendo emocionante y lleno de innovación. Con
-                            avances como la inteligencia artificial, la realidad aumentada y el Internet de las cosas,
-                            podemos esperar que el impacto en la sociedad y los negocios sea aún más profundo en los
-                            próximos años.</p>
+                    <img src="./assets/carousel/carousel-3.png" class="d-block w-100" alt="tecnologias">
+                    <div class="carousel-caption d-none d-md-block">
+                        <div class="carousel-caption-left ">
+                            <h5 class="animate__animated animate__fadeInDown">El Futuro de las Tecnologías Web</h5>
+                            <p class="animate__animated animate__fadeInUp">IA y realidad aumentada impactarán la
+                                sociedad.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -101,68 +102,222 @@
             </button>
         </div>
     </section>
+    <!-- Banner Noticias -->
+    <section id="tech-carousel" class="tech-carousel">
+        <div id="techCarouselFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active text-center">
+                    <h2 class="carousel-text ">Transformación Digital: El Futuro es
+                        Ahora</h2>
+                </div>
+                <div class="carousel-item text-center">
+                    <h2 class="carousel-text ">IA y Machine Learning: La Revolución
+                        Tecnológica</h2>
+                </div>
+                <div class="carousel-item text-center">
+                    <h2 class="carousel-text ">Big Data: Insights que Transforman
+                        Negocios</h2>
+                </div>
+                <div class="carousel-item text-center">
+                    <h2 class="carousel-text ">5G: Conectividad sin Fronteras</h2>
+                </div>
+                <div class="carousel-item text-center">
+                    <h2 class="carousel-text ">Blockchain: Seguridad y Transparencia
+                    </h2>
+                </div>
+            </div>
+            <div class="carousel-indicators ">
+                <button type="button" data-bs-target="#techCarouselFade" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#techCarouselFade" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#techCarouselFade" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#techCarouselFade" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#techCarouselFade" data-bs-slide-to="4"
+                    aria-label="Slide 5"></button>
+            </div>
+            <button class="carousel-control-prev tech-carousel-control" type="button" data-bs-target="#techCarouselFade"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next tech-carousel-control" type="button" data-bs-target="#techCarouselFade"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
 
-
-    <section id="inicio" class="py-5 mt-5">
+    <!-- Video -->
+    <section id="impact-section" class="space-impact-section">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-8 mx-auto text-center">
-                    <h1 class="display-4">Bienvenido a mi página web</h1>
-                    <p class="lead">Esta es una página web básica con Bootstrap 5.</p>
+            <div class="row align-items-center">
+                <div class="col-md-6" data-aos="fade-right">
+                    <div class="impact-text">
+                        <h2 class="impact-title">Revoluciona Tu Conocimiento</h2>
+                        <p class="impact-description">Explora las últimas tendencias tecnológicas y prepárate para el
+                            futuro con nuestro contenido exclusivo.</p>
+                    </div>
+                </div>
+                <div class="col-md-6" data-aos="fade-left">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/GghHOjmrTf4?si=Fn6vsqwLxdrsvg2A" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="container-yt container mt-5">
-        <article>
-            <div class="embed-responsive embed-responsive-16by9">
-                <iframe width="100%" height="840" src="https://www.youtube.com/embed/7FgyM6mfrCI"
-                    title="📱 ¿QUÉ SON LAS TECNOLOGÍAS EMERGENTES? ✔️" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-        </article>
-        <aside>
-            <p class="mt-3">Descubre las últimas tecnologías emergentes que están transformando industrias y
-                revolucionando la forma en que interactuamos con el mundo. Desde la inteligencia artificial hasta la
-                biotecnología, este video explora el emocionante panorama de las innovaciones tecnológicas que están
-                dando forma al futuro.</p>
-
-        </aside>
-    </section>
-
-    <section id="contacto" class="py-5">
+    <section id="articles-section" class="articles-section animate__animated animate__fadeIn">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-8 mx-auto">
-                    <h2 class="text-center mb-4">Contacto</h2>
-                    <form action="#" method="post">
-                        <div class="mb-3">
-                            <label for="nombre" class="form-label">Nombre:</label>
-                            <input type="text" id="nombre" name="nombre" class="form-control" required>
+            <div class="row" data-aos="flip-down">
+                <div class="col-md-4">
+                    <div class="card apple-card">
+                        <img src="./assets//articles/article-2.jpg" class="card-img-top" alt="Articulo 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Innovación en la Era Digital</h5>
+                            <p class="card-text">Descubre cómo las nuevas tecnologías están redefiniendo la forma en que
+                                vivimos y trabajamos. Prepárate para el futuro con insights revolucionarios.</p>
+                            <a href="#!" class="btn btn-primary">Leer más</a>
                         </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Email:</label>
-                            <input type="email" id="email" name="email" class="form-control" required>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card apple-card central-card">
+                        <img src="./assets//articles/article-3.jpg" class="card-img-top" alt="Articulo 2">
+                        <div class="card-body">
+                            <h5 class="card-title">El Poder de la Inteligencia Artificial</h5>
+                            <p class="card-text">La inteligencia artificial está transformando industrias y cambiando el
+                                mundo. Explora las aplicaciones más innovadoras y el impacto de la IA en tu vida.</p>
+                            <a href="#!" class="btn btn-primary">Leer más</a>
                         </div>
-                        <div class="mb-3">
-                            <label for="mensaje" class="form-label">Mensaje:</label>
-                            <textarea id="mensaje" name="mensaje" class="form-control" rows="4" required></textarea>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card apple-card">
+                        <img src="./assets//articles/article-1.jpg" class="card-img-top" alt="Articulo 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Redefiniendo la Conectividad Global</h5>
+                            <p class="card-text">Conoce cómo las tecnologías emergentes están conectando el mundo como
+                                nunca antes. Desde 5G hasta redes satelitales, descubre el futuro de la conectividad.
+                            </p>
+                            <a href="#!" class="btn btn-primary">Leer más</a>
                         </div>
-                        <button type="submit" class="btn btn-primary">Enviar</button>
-                    </form>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="bg-dark text-white py-4">
-        <div class="container text-center">
-            <p>&copy; 2024 Santiago A Moreno B IDCODE</p>
+    <!-- Contact Section -->
+    <section id="contact-section" class="contact-section ">
+        <div class="container">
+            <div class="contact-form-wrapper">
+                <div class="row">
+                    <!-- Formulario de contacto -->
+                    <div class="col-md-6">
+                        <form class="contact-form" data-aos="fade-right">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="name" placeholder="Nombre" required>
+                                <label for="name">Nombre</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="email" placeholder="Correo Electrónico"
+                                    required>
+                                <label for="email">Correo Electrónico</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="subject" placeholder="Asunto" required>
+                                <label for="subject">Asunto</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <textarea id="message" class="form-control" placeholder="Mensaje" rows="6"
+                                    required></textarea>
+                                <label for="message">Mensaje</label>
+                            </div>
+                            <button type="submit" class="btn btn-submit">Enviar Mensaje</button>
+                        </form>
+                    </div>
+                    <!-- Información de contacto -->
+                    <div class="col-md-6 contact-info" data-aos="fade-left">
+                        <h2>Contáctanos</h2>
+                        <p class="contact-description">Estamos aquí para ayudarte. Si tienes alguna pregunta, no dudes
+                            en contactarnos.</p>
+                        <ul class="contact-details">
+                            <li><strong>Nombre de la Empresa:</strong> Tech Innovations</li>
+                            <li><strong>Teléfono:</strong> +123 456 789</li>
+                            <li><strong>Dirección:</strong> Calle Ficticia 123, Ciudad, País</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer" class="footer bg-dark text-white pt-5 pb-3">
+        <div class="container">
+            <div class="row">
+                <!-- Información de la Empresa -->
+                <div class="col-md-4 mb-4">
+                    <h4 class="footer-title">Sobre Nosotros</h4>
+                    <p class="footer-description">En Tech Innovations, nos dedicamos a traer las últimas tendencias
+                        tecnológicas y soluciones innovadoras para ayudarte a alcanzar el futuro. Estamos comprometidos
+                        con la excelencia y la satisfacción del cliente.</p>
+                </div>
+                <!-- Enlaces a Secciones -->
+                <div class="col-md-4 mb-4">
+                    <h4 class="footer-title">Navegación</h4>
+                    <ul class="footer-links list-unstyled">
+                        <li><a href="#home" class="text-white">Inicio</a></li>
+                        <li><a href="#tech-carousel" class="text-white">Tendencias</a></li>
+                        <li><a href="#impact-section" class="text-white">Impacto</a></li>
+                        <li><a href="#articles-section" class="text-white">Artículos</a></li>
+                        <li><a href="#contact-section" class="text-white">Contacto</a></li>
+                    </ul>
+                </div>
+                <!-- Información de Contacto -->
+                <div class="col-md-4 mb-4">
+                    <h4 class="footer-title">Contacto</h4>
+                    <ul class="footer-contact list-unstyled">
+                        <li><strong>Dirección:</strong> Calle Ficticia 123, Ciudad, País</li>
+                        <li><strong>Teléfono:</strong> +123 456 789</li>
+                        <li><strong>Email:</strong> <a href="mailto:contacto@techinnovations.com"
+                                class="text-white">contacto@techinnovations.com</a></li>
+                    </ul>
+                    <div class="footer-social">
+                        <a href="https://facebook.com" class="social-icon text-white me-2"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com" class="social-icon text-white me-2"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="https://linkedin.com" class="social-icon text-white me-2"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a href="https://instagram.com" class="social-icon text-white"><i
+                                class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom text-center mt-4 p-3 end-footter">
+            <p>&copy; 2024 <b class="id-code-app">{ID}-CODE</b> Santiago A. Moreno B.</p>
         </div>
     </footer>
 
+
+
     <script src="js/actions.js"></script>
+    <script src="js/scrollNav.js"></script>
+    <script src="js/animatetechbar.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            delay: 200, // Retraso global en milisegundos
+            duration: 800, // Duración de la animación en milisegundos
+        });
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
 </body>
